@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore The Onyx menu featuring signature coffee, cold brews, matcha, pastries, and handcrafted food."
+    >
+
+    <title>The Onyx | Menu</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css?v=7">
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+         azadi top bar
+    ========================================================== -->
+    
+
+    <!-- =====================================================
+         nav bar
+    ====================================================== -->
+
+    <header>
+        <nav class="glass-nav" aria-label="Main navigation">
+
+            <a href="index.html" class="nav-brand">Onyx.</a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="menu.html" class="active" aria-current="page">Menu</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact & Reviews</a>
+                </li>
+
+                <li>
+                    <a href="login.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             page header
+        ================================================== -->
+
+        <section class="page-header">
+
+            <span class="section-eyebrow">
+                CRAFTED WITH PURPOSE
+            </span>
+
+            <h1>
+                Our Onyx Menu
+            </h1>
+
+            <p class="page-header-subtitle">
+                Carefully selected ingredients, thoughtfully prepared,
+                and served with a little Onyx magic.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+                menu section
+        ================================================== -->
+
+        <section class="menu-section">
+
+            <!-- =================================================
+                 category navigation
+            ================================================== -->
+
+            <div class="menu-categories">
+
+                <a href="#coffee" class="category-link active">Coffee</a>
+                <a href="#cold-drinks" class="category-link">Cold Drinks</a>
+                <a href="#food" class="category-link">Food</a>
+                <a href="#pastries" class="category-link">Pastries</a>
+                <a href="#favorites" class="category-link">Favorites</a>
+
+            </div>
+
+
+            <!-- =================================================
+                 main menu + cart
+            ================================================== -->
+
+            <div class="menu-layout">
+
+
+                <!-- =================================================
+                     product grid
+                ================================================== -->
+
+                <div class="menu-grid">
+
+
+                    <!-- =============================================
+                         1. CAFFÈ MEZA
+                    ============================================== -->
+
+                    <article class="glass-card menu-item signature-item" id="favorites">
+
+                        <span class="signature-badge">Founder's Signature</span>
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=800" alt="Caffè Meza double ristretto with creamy micro-foam" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Signature</span>
+                            <span class="product-tag">Hot</span>
+                        </div>
+
+                        <h2>Caffè Meza</h2>
+
+                        <div class="product-rating" aria-label="5 out of 5 stars">
+                            ★★★★★
+                            <span>5.0</span>
+                        </div>
+
+                        <p>
+                            A sophisticated double ristretto layered
+                            with velvety micro-foam and a subtle
+                            dusting of dark cocoa.
+                        </p>
+
+                        <div class="product-details">
+                            <span>Double Espresso</span>
+                            <span>Micro-Foam</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$6.50</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Caffè Meza quantity">−</a>
+                                <span class="qty-num">1</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Caffè Meza quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+
+                    <!-- =============================================
+                         2. NITRO COLD BREW
+                    ============================================== -->
+
+                    <article class="glass-card menu-item" id="cold-drinks">
+
+                        <span class="product-badge">Best Seller</span>
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800" alt="Nitro cold brew coffee" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Cold</span>
+                            <span class="product-tag">Smooth</span>
+                        </div>
+
+                        <h2>Nitro Cold Brew</h2>
+
+                        <div class="product-rating" aria-label="5 out of 5 stars">
+                            ★★★★★
+                            <span>4.9</span>
+                        </div>
+
+                        <p>
+                            Steeped for 18 hours and infused with
+                            nitrogen for a creamy, naturally smooth finish.
+                        </p>
+
+                        <div class="product-details">
+                            <span>18 Hour Brew</span>
+                            <span>Nitro Infused</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$5.00</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Nitro Cold Brew quantity">−</a>
+                                <span class="qty-num">1</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Nitro Cold Brew quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+
+                    <!-- =============================================
+                         3. ICED MATCHA
+                    ============================================== -->
+
+                    <article class="glass-card menu-item">
+
+                        <span class="product-badge">Customer Favorite</span>
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1536514072410-5019a3c69182?auto=format&fit=crop&w=800" alt="Iced matcha latte with oat milk" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Iced</span>
+                            <span class="product-tag">Oat Milk</span>
+                        </div>
+
+                        <h2>Iced Matcha Latte</h2>
+
+                        <div class="product-rating" aria-label="4.8 out of 5 stars">
+                            ★★★★★
+                            <span>4.8</span>
+                        </div>
+
+                        <p>
+                            Ceremonial grade matcha whisked with
+                            creamy oat milk and a touch of agave.
+                        </p>
+
+                        <div class="product-details">
+                            <span>Ceremonial Matcha</span>
+                            <span>Oat Milk</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$5.50</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Iced Matcha quantity">−</a>
+                                <span class="qty-num">1</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Iced Matcha quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+
+                    <!-- =============================================
+                         4. POUR OVER
+                    ============================================== -->
+
+                    <article class="glass-card menu-item" id="coffee">
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800" alt="Freshly prepared Ethiopian pour over coffee" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Single Origin</span>
+                            <span class="product-tag">Hot</span>
+                        </div>
+
+                        <h2>Pour Over Blend</h2>
+
+                        <div class="product-rating" aria-label="4.9 out of 5 stars">
+                            ★★★★★
+                            <span>4.9</span>
+                        </div>
+
+                        <p>
+                            Single-origin Ethiopian beans brewed slowly
+                            to reveal bright fruit notes and a clean finish.
+                        </p>
+
+                        <div class="product-details">
+                            <span>Ethiopian Beans</span>
+                            <span>Single Origin</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$6.00</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Pour Over Blend quantity">−</a>
+                                <span class="qty-num">1</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Pour Over Blend quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+
+                    <!-- =============================================
+                         5. COFFEE COOKIES
+                    ============================================== -->
+
+                    <article class="glass-card menu-item" id="food">
+
+                        <span class="product-badge">New</span>
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800" alt="Fresh espresso chocolate chunk cookies" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Baked Daily</span>
+                            <span class="product-tag">Sweet</span>
+                        </div>
+
+                        <h2>Onyx Coffee Cookies</h2>
+
+                        <div class="product-rating" aria-label="4.9 out of 5 stars">
+                            ★★★★★
+                            <span>4.9</span>
+                        </div>
+
+                        <p>
+                            Espresso chocolate chunk cookies,
+                            baked fresh daily and finished with sea salt.
+                        </p>
+
+                        <div class="product-details">
+                            <span>Espresso Chocolate</span>
+                            <span>Baked Daily</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$3.50</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Coffee Cookies quantity">−</a>
+                                <span class="qty-num">3</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Coffee Cookies quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+
+                    <!-- =============================================
+                         6. AVOCADO TOAST
+                    ============================================== -->
+
+                    <article class="glass-card menu-item">
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=800" alt="Avocado toast on toasted sourdough" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Brunch</span>
+                            <span class="product-tag">Fresh</span>
+                        </div>
+
+                        <h2>Avocado Toast</h2>
+
+                        <div class="product-rating" aria-label="4.7 out of 5 stars">
+                            ★★★★★
+                            <span>4.7</span>
+                        </div>
+
+                        <p>
+                            Toasted sourdough topped with smashed avocado,
+                            microgreens, and a delicate seasoning blend.
+                        </p>
+
+                        <div class="product-details">
+                            <span>Sourdough</span>
+                            <span>Fresh Avocado</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$8.00</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Avocado Toast quantity">−</a>
+                                <span class="qty-num">1</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Avocado Toast quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+
+                    <!-- =============================================
+                         7. VANILLA FRAPPE
+                    ============================================== -->
+
+                    <article class="glass-card menu-item">
+
+                        <span class="product-badge">Popular</span>
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800" alt="Vanilla bean coffee frappe" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Blended</span>
+                            <span class="product-tag">Cold</span>
+                        </div>
+
+                        <h2>Vanilla Bean Frappe</h2>
+
+                        <div class="product-rating" aria-label="4.8 out of 5 stars">
+                            ★★★★★
+                            <span>4.8</span>
+                        </div>
+
+                        <p>
+                            Ice-blended coffee infused with real
+                            Madagascar vanilla for a rich, creamy finish.
+                        </p>
+
+                        <div class="product-details">
+                            <span>Madagascar Vanilla</span>
+                            <span>Ice Blended</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$5.50</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Vanilla Bean Frappe quantity">−</a>
+                                <span class="qty-num">1</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Vanilla Bean Frappe quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+
+                    <!-- =============================================
+                         8. CROISSANT
+                    ============================================== -->
+
+                    <article class="glass-card menu-item" id="pastries">
+
+                        <div class="menu-img-container">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800" alt="Fresh golden butter croissant" loading="lazy">
+                        </div>
+
+                        <div class="product-tags">
+                            <span class="product-tag">Fresh</span>
+                            <span class="product-tag">Pastry</span>
+                        </div>
+
+                        <h2>Butter Croissant</h2>
+
+                        <div class="product-rating" aria-label="4.8 out of 5 stars">
+                            ★★★★★
+                            <span>4.8</span>
+                        </div>
+
+                        <p>
+                            Flaky, golden, and baked fresh every morning
+                            for the perfect buttery bite.
+                        </p>
+
+                        <div class="product-details">
+                            <span>All Butter</span>
+                            <span>Fresh Daily</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <span class="price">$4.00</span>
+                            <div class="quantity-box">
+                                <a href="#cart" class="qty-btn" aria-label="Decrease Butter Croissant quantity">−</a>
+                                <span class="qty-num">1</span>
+                                <a href="#cart" class="qty-btn" aria-label="Increase Butter Croissant quantity">+</a>
+                            </div>
+                        </div>
+
+                        <a href="#cart" class="btn">Add to Order</a>
+
+                    </article>
+
+                </div>
+
+
+                <!-- =================================================
+                     STATIC cart sidebar
+                ================================================== -->
+
+                <aside class="glass-card cart-sidebar" id="cart" aria-label="Your order">
+
+                    <div class="cart-heading">
+                        <span class="section-eyebrow">YOUR ORDER</span>
+                        <h2>Your Cart</h2>
+                        <span class="cart-item-count">2 items</span>
+                    </div>
+
+                    <ul id="cart-items">
+
+                        <!-- Cart Item -->
+                        <li>
+                            <div class="cart-item-info">
+                                <strong>Onyx Coffee Cookies</strong>
+                                <span>×3</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span class="cart-price">$10.50</span>
+                                <a href="#cart" class="btn btn-remove" aria-label="Remove Onyx Coffee Cookies">×</a>
+                            </div>
+                        </li>
+
+                        <!-- Cart Item -->
+                        <li>
+                            <div class="cart-item-info">
+                                <strong>Nitro Cold Brew</strong>
+                                <span>×1</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span class="cart-price">$5.00</span>
+                                <a href="#cart" class="btn btn-remove" aria-label="Remove Nitro Cold Brew">×</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <!-- ========================================== -->
+                    <!-- PROMO CODE INPUT -->
+                    <!-- ========================================== -->
+                    <div class="promo-input-group">
+                        <input type="text" id="promo-code" placeholder="Enter promo code..." aria-label="Promo Code">
+                        <button type="button" class="btn apply-btn">Apply</button>
+                    </div>
+
+                    <div class="cart-summary">
+
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$15.50</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Estimated Tax</span>
+                            <span>$1.55</span>
+                        </div>
+
+                        <div class="summary-row summary-total">
+                            <span>Total</span>
+                            <strong>$17.05</strong>
+                        </div>
+
+                    </div>
+
+                    <a href="checkout.html" class="btn checkout-btn">Order Online Now</a>
+
+                    <p class="cart-note">
+                        Front-end demo — no real payment is processed.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MENU PROMO
+        ================================================== -->
+
+        
+
+    
+
+
+
+        <!-- ==================================================
+             MENU PROMO (RELOCATED TO BOTTOM)
+        ================================================== -->
+        <section class="menu-promo-section">
+            <div class="glass-card menu-promo-card">
+                <div>
+                    <h2>Save 15% Today</h2>
+                    <p>Enter promo code <strong style="color: var(--gold-dark);">AZADI14</strong> at checkout to apply your discount.</p>
+                </div>
+                <a href="#cart" class="btn">Apply Now</a>
+            </div>
+        </section>
+
+</main>
+
+
+    <!-- =====================================================
+         footer
+    ====================================================== -->
+
+    <footer>
+
+        <div class="social-links">
+            <a href="index.html" class="footer-logo">Onyx</a>
+            <p>Coffee. Community. Creativity.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Onyx on Instagram">Instagram</a>
+                <a href="#" aria-label="Onyx on Facebook">Facebook</a>
+                <a href="#" aria-label="Onyx on TikTok">TikTok</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+        </div>
+
+        <p class="footer-copy">
+            &copy; 2026 The Onyx.
+            Designed with passion.
+        </p>
+
+    </footer>
+
+<script src="app.js"></script>    <script>
+        // Smooth scroll hide/show navbar
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.glass-nav');
+        
+        window.addEventListener('scroll', () => {
+            if (!navbar) return;
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scrolling down -> hide
+                navbar.style.transform = 'translate(-50%, -150%)';
+            } else {
+                // Scrolling up -> show
+                navbar.style.transform = 'translate(-50%, 0)';
+            }
+            lastScrollY = window.scrollY;
+        }, { passive: true });
+    </script>
+</body>
+</html>

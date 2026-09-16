@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed | Onyx</title>
+    <link rel="stylesheet" href="style.css?v=8">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+    .checkout-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 5% 80px;
+        background-image: linear-gradient(rgba(44, 37, 32, 0.4), rgba(44, 37, 32, 0.4)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=2000');
+        background-size: cover;
+        background-position: center;
+    }
+    .success-card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(25px) saturate(120%);
+        -webkit-backdrop-filter: blur(25px) saturate(120%);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: var(--radius-lg);
+        padding: 60px;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        animation: smoothReveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .success-icon {
+        width: 80px;
+        height: 80px;
+        background: var(--gold-dark);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .success-card h1 {
+        color: #ffffff;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .success-card p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+    .success-card .btn {
+        background: var(--gold-dark);
+        color: white;
+        border: none;
+    }
+    .success-card .btn:hover {
+        background: #ffffff;
+        color: var(--text-dark) !important;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="glass-nav" aria-label="Main navigation">
+
+            <a href="index.html" class="nav-brand">Onyx.</a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="menu.html" class="active" aria-current="page">Menu</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact & Reviews</a>
+                </li>
+
+                <li>
+                    <a href="login.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="checkout-page">
+        <div class="success-card">
+            <div class="success-icon">&#10003;</div>
+            <h1>Order Confirmed</h1>
+            <p>Thank you for your order! Our baristas are preparing your crafted coffee right now. It will be ready for pickup in 10-15 minutes.</p>
+            <a href="menu.html" class="btn">Return to Menu</a>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+            <a href="index.html" class="footer-logo">Onyx</a>
+            <p>Coffee. Community. Creativity.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Onyx on Instagram">Instagram</a>
+                <a href="#" aria-label="Onyx on Facebook">Facebook</a>
+                <a href="#" aria-label="Onyx on TikTok">TikTok</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+        </div>
+
+        <p class="footer-copy">
+            &copy; 2026 The Onyx.
+            Designed with passion.
+        </p>
+
+    </footer>
+
+<script src="app.js"></script>    <script>
+        // Smooth scroll hide/show navbar
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.glass-nav');
+        
+        window.addEventListener('scroll', () => {
+            if (!navbar) return;
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scrolling down -> hide
+                navbar.style.transform = 'translate(-50%, -150%)';
+            } else {
+                // Scrolling up -> show
+                navbar.style.transform = 'translate(-50%, 0)';
+            }
+            lastScrollY = window.scrollY;
+        }, { passive: true });
+    </script>
+</body>
+</html>
+

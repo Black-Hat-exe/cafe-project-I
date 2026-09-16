@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Reviews - Onyx</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+    <header>
+        <nav class="glass-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-brand">Onyx.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact & Reviews</a></li>
+                <li><a href="login.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero parallax">
+            <div class="glass-card contact-hero-content">
+                <span class="hero-eyebrow">GET IN TOUCH</span>
+                <h1>We'd Love To Hear From You</h1>
+                <p>Questions, feedback, or just want to say hello? Drop us a message or request a reservation.</p>
+            </div>
+        </section>
+
+        <!-- =================================================
+             UNIFIED CONTACT & RESERVATION DASHBOARD
+        ================================================== -->
+
+        <section class="unified-contact-section">
+            <div class="unified-contact-grid">
+                
+                <!-- Left Column: Map & Reservation -->
+                <div class="unified-column">
+                    <div class="animated-glow-card unified-map-card">
+                        <div class="card-inner">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1701.3712574447437!2d73.9740523!3d31.7161741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918c281df6f5d81%3A0xc3f1a073f1362e8!2sSargodha%20Rd%2C%20Sheikhupura%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" width="100%" height="250" style="border:0; border-radius: var(--radius-md);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="animated-glow-card unified-reservation-card">
+                        <div class="card-inner">
+                            <div class="unified-form-header">
+                                <h2>Request A Table</h2>
+                                <p>Reserve your spot for coffee dates or meetings.</p>
+                            </div>
+                            <form action="#" method="get" class="unified-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="res-name">Name</label>
+                                        <input type="text" id="res-name" name="name" required placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="guests">Guests</label>
+                                        <select id="guests" name="guests">
+                                            <option value="1">1 Person</option>
+                                            <option value="2" selected>2 People</option>
+                                            <option value="3">3 People</option>
+                                            <option value="4">4 People</option>
+                                            <option value="5+">5+ People</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Date & Time</label>
+                                    <input type="datetime-local" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="res-notes">Special Requests</label>
+                                    <textarea id="res-notes" name="notes" rows="2" placeholder="Any preferences?"></textarea>
+                                </div>
+                                <button type="submit" class="btn contact-submit">Book Table</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Info & Message -->
+                <div class="unified-column">
+                    <div class="animated-glow-card unified-info-card">
+                        <div class="card-inner">
+                            <div class="unified-info-header">
+                                <h2>Visit Us</h2>
+                                <p>We're located in the heart of Sheikhupura.</p>
+                            </div>
+                            <div class="unified-details-grid">
+                                <div class="detail-item">
+                                    <strong>Address</strong>
+                                    <p>Sargodha Road<br>Sheikhupura</p>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Hours</strong>
+                                    <p>Mon-Fri: 7am - 9pm<br>Sat-Sun: 8am - 10pm</p>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Contact</strong>
+                                    <p>hello@onyx.com<br>+92 300 1234567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="animated-glow-card unified-message-card">
+                        <div class="card-inner">
+                            <div class="unified-form-header">
+                                <h2>Get In Touch</h2>
+                                <p>Send us a general message or feedback.</p>
+                            </div>
+                            <form action="#" method="get" class="unified-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="msg-name">Name</label>
+                                        <input type="text" id="msg-name" name="name" required placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="msg-email">Email</label>
+                                        <input type="email" id="msg-email" name="email" required placeholder="your@email.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                                </div>
+                                <button type="submit" class="btn contact-submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-heading">
+                <span class="section-eyebrow">GOOD TO KNOW</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <details class="glass-card faq-item"><summary>Do you accept reservations?</summary><p>Yes, use the form above.</p></details>
+                <details class="glass-card faq-item"><summary>Do you offer Wi-Fi?</summary><p>Yes, complimentary Wi-Fi is available.</p></details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="index.html" class="footer-logo">Onyx</a>
+            <p>Coffee. Community. Creativity.</p>
+        </div>
+        <p class="footer-copy">&copy; 2026 The Onyx. Designed with passion.</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        // Smooth scroll hide/show navbar
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.glass-nav');
+        
+        window.addEventListener('scroll', () => {
+            if (!navbar) return;
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scrolling down -> hide
+                navbar.style.transform = 'translate(-50%, -150%)';
+            } else {
+                // Scrolling up -> show
+                navbar.style.transform = 'translate(-50%, 0)';
+            }
+            lastScrollY = window.scrollY;
+        }, { passive: true });
+    </script>
+</body>
